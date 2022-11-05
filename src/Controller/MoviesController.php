@@ -14,6 +14,8 @@ class MoviesController extends AbstractController
     
     public function index(): Response
     {
-        return $this->render('index.html.twig');
+        return $this->render('index.html.twig',[
+            'title'=>"Evenger:Endgame"
+        ]);
 }
 }
